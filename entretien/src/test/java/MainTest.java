@@ -14,7 +14,7 @@ public class MainTest {
     int number = 1;
 
     // Then calling #manageI
-    String result = main.convertI(number);
+    String result = main.convertInRomain(number);
 
     Assert.assertEquals(result, "I");
   }
@@ -25,7 +25,7 @@ public class MainTest {
     int number = 2;
 
     // Then calling #manageI
-    String result = main.convertI(number);
+    String result = main.convertInRomain(number);
 
     Assert.assertEquals(result, "II");
   }
@@ -36,7 +36,7 @@ public class MainTest {
     int number = 3;
 
     // Then calling #manageI
-    String result = main.convertI(number);
+    String result = main.convertInRomain(number);
 
     Assert.assertEquals(result, "III");
   }
@@ -47,7 +47,7 @@ public class MainTest {
     int number = 5;
 
     // Then calling #manageI
-    String result = main.convertFiveToEight(number);
+    String result = main.convertInRomain(number);
 
     Assert.assertEquals(result, "V");
   }
@@ -58,7 +58,7 @@ public class MainTest {
     int number = 6;
 
     // Then calling #manageI
-    String result = main.convertFiveToEight(number);
+    String result = main.convertInRomain(number);
 
     Assert.assertEquals(result, "VI");
   }
@@ -69,7 +69,7 @@ public class MainTest {
     int number = 7;
 
     // Then calling #manageI
-    String result = main.convertFiveToEight(number);
+    String result = main.convertInRomain(number);
 
     Assert.assertEquals(result, "VII");
   }
@@ -80,7 +80,7 @@ public class MainTest {
     int number = 8;
 
     // Then calling #manageI
-    String result = main.convertFiveToEight(number);
+    String result = main.convertInRomain(number);
 
     Assert.assertEquals(result, "VIII");
   }
@@ -91,7 +91,7 @@ public class MainTest {
     int number = 10;
 
     // Then calling #manageI
-    String result = main.convertTenToThirteen(number);
+    String result = main.convertInRomain(number);
 
     Assert.assertEquals(result, "X");
   }
@@ -102,7 +102,7 @@ public class MainTest {
     int number = 11;
 
     // Then calling #manageI
-    String result = main.convertTenToThirteen(number);
+    String result = main.convertInRomain(number);
 
     Assert.assertEquals(result, "XI");
   }
@@ -113,7 +113,7 @@ public class MainTest {
     int number = 12;
 
     // Then calling #manageI
-    String result = main.convertTenToThirteen(number);
+    String result = main.convertInRomain(number);
 
     Assert.assertEquals(result, "XII");
   }
@@ -124,8 +124,118 @@ public class MainTest {
     int number = 13;
 
     // Then calling #manageI
-    String result = main.convertTenToThirteen(number);
+    String result = main.convertInRomain(number);
 
     Assert.assertEquals(result, "XIII");
+  }
+
+  @Test
+  public void testFour() {
+    // Given one number
+    int number = 4;
+
+    // Then calling #manageI
+    String result = main.convertInRomain(number);
+
+    Assert.assertEquals(result, "IV");
+  }
+
+  @Test
+  public void testNine() {
+    // Given one number
+    int number = 9;
+
+    // Then calling #manageI
+    String result = main.convertInRomain(number);
+
+    Assert.assertEquals(result, "IX");
+  }
+
+  @Test
+  public void testSeventeen() {
+    // Given one number
+    int number = 17;
+
+    // Then calling #manageI
+    String result = main.convertInRomain(number);
+
+    Assert.assertEquals(result, "XVII");
+  }
+
+  @Test
+  public void testFourteen() {
+    // Given one number
+    int number = 14;
+
+    // Then calling #manageI
+    String result = main.convertInRomain(number);
+
+    Assert.assertEquals(result, "XIV");
+  }
+
+  @Test
+  public void testThirtySeventeen() {
+    // Given one number
+    int number = 30;
+
+    // Then calling #manageI
+    String result = main.convertInRomain(number);
+
+    Assert.assertEquals(result, "XXX");
+  }
+
+  @Test
+  public void testThirtyEight() {
+    // Given one number
+    int number = 38;
+
+    // Then calling #manageI
+    String result = main.convertInRomain(number);
+
+    Assert.assertEquals(result, "XXXVIII");
+  }
+
+  @Test
+  public void testSixtyNine() {
+    // Given one number
+    int number = 69;
+
+    // Then calling #manageI
+    String result = main.convertInRomain(number);
+
+    Assert.assertEquals(result, "LXIX");
+  }
+
+  @Test
+  public void testTwoHundredThirtyEight() {
+    // Given one number
+    int number = 238;
+
+    // Then calling #manageI
+    String result = main.convertInRomain(number);
+
+    Assert.assertEquals(result, "CCXXXVIII");
+  }
+
+  @Test
+  public void testNinetyFive() {
+    // Given one number
+    int number = 95;
+
+    // Then calling #manageI
+    String result = main.convertInRomain(number);
+
+    Assert.assertEquals(result, "XCV");
+  }
+
+  @Test
+  public void testOneThousandNineHundredNinetyNine() {
+    // Given one number
+    int number = 1999;
+
+    // Then calling #manageI
+    String result = main.convertInRomain(number);
+
+    Assert.assertEquals(result, "MCMXCIX");
   }
 }
